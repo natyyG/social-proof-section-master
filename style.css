@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+*{
+    padding:0px;
+    margin:0px;
+}
+:root{
+    --veryDarkMagenta: hsl(300, 43%, 22%);
+    --softPink: hsl(333, 80%, 67%);
+    --DarkGrayishMagenta: hsl(303, 10%, 53%);
+    --lightGrayishMagenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+/* font-family: 'League Spartan', sans-serif; */
+body{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-color: var(--white);
+}
+.container{
+    width:80%;
+    height:100%;
+    margin: auto;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+.desktoptop{
+    position:absolute;
+    top:0;
+    width: 57rem;
+}
+.mobiletop{
+    position:absolute;
+    display:none;
+    top:0;
+    width: 57rem;
+}
+.desktopbottom{
+    
+    position:absolute;
+    bottom:0;
+    right:0;
+    width:57rem;
+}
+.mobilebottom{
+    display:none;
+    position:absolute;
+    bottom:0;
+    right:0;
+    width:57rem;
+}
+
+.intro{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    text-align: center;
+    height: fit-content;
+    z-index: 2;
+    margin-bottom:23px;
+}
+.introtxt{
+    width:46%;
+    height:100%;
+    text-align: start;
+}
+.introtxt h1{
+    color: var(--veryDarkMagenta);
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+    font-size: 5rem;
+    margin-bottom: 46px;
+}
+.introtxt p{
+    color: var(--DarkGrayishMagenta);
+    font-weight: 500;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 22.5px;
+    line-height: 1.2;
+}
+.ratingcont{
+    display: flex;
+    flex-direction: column;
+    width: 44%;
+    height: 60.5%;
+    justify-content: center;
+    
+}
+.rating{
+    display: flex;
+    background-color: var(--lightGrayishMagenta);
+    padding: 22px;
+    margin: 10px 0px;
+    border-radius: 6px;
+    width: 382px;
+    height: 18px;
+}
+.review{
+    align-self: flex-start;
+}
+.guru{
+    align-self: center;
+}
+.besttech{
+    align-self: flex-end;
+}
+.stars{
+    display:flex;
+    width: 172px;
+}
+.stars img{
+    display:flex;
+    margin:0 5px;
+}
+.ratingtxt p{
+    color:var(--veryDarkMagenta);
+    font-weight: 700;
+    font-family: 'League Spartan', sans-serif;
+}
+.cardcont{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    color: var(--white);
+    justify-content: space-between;
+    height: 301px;
+    margin-bottom: -54px;
+}
+.card{
+    width: 30%;
+    margin: 0 10px;
+    border-radius:16px;
+    background-color: var(--veryDarkMagenta);
+    padding: 49px 34px;
+    height: fit-content;
+}
+.second{
+    align-self: center;
+}
+.third{
+    align-self: flex-end;
+}
+.profile{
+    display:flex;
+    text-align: center;
+    margin-bottom:30px;
+}
+.profile img{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+}
+.profiletxt{
+    margin-left:16px;
+    text-align:start;
+}
+.profiletxt p{
+    margin-top:3px;
+    font-weight: 400;
+    font-family: 'League Spartan', sans-serif;
+    color: var(--softPink);
+}
+.profiletxt h3{
+    font-weight: 700;
+    font-family: 'League Spartan', sans-serif;
+}
+.desc p{
+    font-weight: 400;
+    line-height: 20px;
+    font-family: 'League Spartan', sans-serif;
+}
+@media(max-width:1000px){
+    .intro{
+        margin-top:200px;
+        flex-direction: column;
+    }
+    .introtxt{
+        width:100%;
+        text-align: center;
+    }
+    .ratingcont{
+        width:100%;
+        margin-top:30px;
+    }
+    .rating{
+        width:100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 55px;
+    }
+    .stars{
+        justify-content: center;
+    }
+    .ratingtxt{
+        margin-top:20px;
+    }
+    .review{
+        align-self: center;
+    }
+    .guru{
+        align-self: center;
+    }
+    .besttech{
+        align-self: center;
+    }
+    .cardcont{
+        width:100%;
+        flex-direction: column;
+        
+    }
+    .card{
+        width:fit-content;
+        justify-self:flex-start;
+        margin-bottom:16px;
+    }
+    .desktoptop{
+        display:none;
+    }
+    .mobiletop{
+        display:block;
+    }
+    .desktopbottom{
+        display:none;
+    }
+    .mobilebottom{
+        display:block;
+    }
+}
